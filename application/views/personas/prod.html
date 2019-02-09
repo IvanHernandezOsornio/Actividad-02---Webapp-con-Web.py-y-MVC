@@ -1,0 +1,34 @@
+$def with(datos)
+
+<center><h1>Base de datos</h1></center><br>
+<br>
+<br>
+<center><h2>Productos</h2></center>
+<br>
+<br>
+<center><table border="5">
+    <th>Nombre del Producto</th>
+    <th>Marca</th>
+    <th>Existencias</th>
+    <th>Descripcion</th>
+    <th>Costo</th>  
+    <th>Eliminar</th> 
+    <th>Actualizar</th>
+    <th>Ver Producto</th>
+    $for row in datos:
+        <tr>
+            <td>$row.nombre_prod</td>
+            <td>$row.marca</td>
+            <td>$row.existencias</td>
+            <td>$row.descripcion</td>
+            <td>$row.costo</td> 
+            <td><a href="/deletep/$row.nombre_prod">Eliminar</a></td>
+            <td><a href="/updatep/$row.nombre_prod">Actualizar</a></td>
+            <td><a href="/verp/$row.nombre_prod">Ver producto</a></td>            
+        </tr>
+</table></center>
+<br>
+<br>
+<center><a href="/insertp"><h2>Insertar Productos</h2></a></center>
+
+

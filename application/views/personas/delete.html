@@ -1,0 +1,24 @@
+$def with(datos)
+<center><a href="/"><h1>Eliminar Cliente</h1></a></center>
+
+
+<form method="POST">
+  <center><label for="nombre">Nombre</label></center>
+  <center><input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre"></center>
+  <br>
+  <center><label for="email">Email</label></center>
+  <center><input type="email" readonly="true" value="$datos.email" id="email" name="email"></center>
+  <br>
+  <center><label for="turno">turno</label></center>
+  <center><input type="turno" readonly="true" value="$datos.turno" id="turno" name="turno"></center>
+  <br>
+  <center><label for="direccion">direccion</label></center>
+  <center><input type="direccion" readonly="true" value="$datos.direccion" id="direccion" name="direccion"></center>
+  <br>
+  <center><label for="genero">genero</label></center>
+  <center><input type="genero" readonly="true" value="$datos.genero" id="genero" name="genero"></center>
+  <br>
+  <center><button type="submit" class="btn btn-primary">Eliminar</button></center>
+</form>
+
+
